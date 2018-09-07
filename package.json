@@ -11,9 +11,10 @@
     },
     "dependencies": {
         "node-red": "0.19.x",
-        "aws-sdk": "2.4.x",
+        "aws-sdk": "2.310.x",
         "node-red-contrib-mapper": "0.0.x",
         "node-red-contrib-storage-s3": "0.0.x",
+        "node-red-contrib-string": "0.2.x",
         "node-red-contrib-ttn": "2.0.x",
         "node-red-dashboard": "2.9.x",
         "node-red-node-aws": "0.1.x",

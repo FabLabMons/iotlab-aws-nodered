@@ -24,7 +24,7 @@ module.exports = {
     awsS3Bucket: 'iotlab-aws-nodered',
     storageModule: require('node-red-contrib-storage-s3'),
     // the tcp port that the Node-RED web server is listening on
-    uiPort: process.env.PORT || 1880,
+    uiPort: process.env.PORT || 80,
 
     // By default, the Node-RED UI accepts connections on all IPv4 interfaces.
     // To listen on all IPv6 addresses, set uiHost to "::",
@@ -81,7 +81,7 @@ module.exports = {
     // Note: once you set this property, do not change it - doing so will prevent
     // node-red from being able to decrypt your existing credentials and they will be
     // lost.
-    //credentialSecret: "a-secret-key",
+    credentialSecret: "iotlab-has-a-little-secret",
 
     // By default, all user data is stored in the Node-RED install directory. To
     // use a different location, the following property can be used
@@ -232,7 +232,7 @@ module.exports = {
     // palette. If a node's category is not in the list, the category will get
     // added to the end of the palette.
     // If not set, the following default order is used:
-    //paletteCategories: ['subflows', 'input', 'output', 'function', 'social', 'mobile', 'storage', 'analysis', 'advanced'],
+    paletteCategories: ['subflows', 'input', 'output', 'function', 'dashboard', 'social', 'mobile', 'storage', 'analysis', 'advanced'],
 
     // Configure the logging output
     logging: {
